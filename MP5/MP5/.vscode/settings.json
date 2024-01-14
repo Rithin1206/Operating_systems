@@ -1,0 +1,12 @@
+{
+    "files.associations": {
+        "interrupts.C": "cpp",
+        "thread.C": "cpp",
+        "kernel.C": "cpp",
+        "queue.H": "cpp",
+        "machine.C": "cpp",
+        "scheduler.C": "cpp",
+        "simple_timer.C": "cpp",
+        "exceptions.C": "cpp"
+    }
+}

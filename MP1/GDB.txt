@@ -1,0 +1,9 @@
+GDB installation:
+Step1: Uninstall existing bochs.
+Step2: Reinstall Bosch with gdb
+Step3: Enable GDB setup in configure file of Bochs Source code.
+Step4:Sudo make and sudo make install will compile and move it to usr/local/bin
+Step5: In the bochsrc.brxc file add a line to enable gdb and mention the port number as follows: gdbstub: enabled=1, port=1234, text_base=0, data_base=0, bss_base=0
+Step 6: As the binary file is not compatible for debugging change .bin to .elf in copykernel.sh and makefile files.
+Step6: load up bochs simulator and open gdb in another terminal by running: “gdb kernel.elf”
+Step7: Now the gdb is setup and we can add breakpoints at various lines to debug.
